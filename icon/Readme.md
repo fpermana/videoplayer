@@ -1,0 +1,11 @@
+dot-menu.svg https://icon-icons.com/icon/dot-menu-more-vertical/110310
+play.svg https://icon-icons.com/icon/music-play-pause-control-go-arrow/80458
+stop.svg https://icon-icons.com/icon/stop-play/214222
+pause.svg https://icon-icons.com/icon/pause-play/214327
+close.svg https://icon-icons.com/icon/cancel-music-close-cross/123879
+video.svg https://icon-icons.com/icon/movie-symbol-of-video-camera/72981
+back.svg https://icon-icons.com/icon/arrow-back-backwards-repeat-previous/80453
+folder.svg https://icon-icons.com/icon/folder-black/93099
+file.svg https://icon-icons.com/icon/file-play/184989
+down.svg https://icon-icons.com/icon/angle-arrow-down/73683
+up.svg https://icon-icons.com/icon/arrow-up/72374

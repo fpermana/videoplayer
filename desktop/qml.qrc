@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/pages/MainPage.qml</file>
+        <file>qml/components/VideoItem.qml</file>
+        <file>qml/components/VideoDummy.qml</file>
+        <file>qml/components/WindowPopup.qml</file>
+        <file>qml/components/SlidingPopup.qml</file>
+        <file>qml/components/SeekControl.qml</file>
+        <file>qml/components/OpenFileWindowPopup.qml</file>
+        <file>qml/components/OpenFileSlidingPopup.qml</file>
+        <file>qml/pages/AboutPage.qml</file>
+    </qresource>
+</RCC>
