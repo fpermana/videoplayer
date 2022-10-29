@@ -41,49 +41,68 @@ FocusScope {
         color: "white"
         anchors {
             fill: parent
-            topMargin: titleText.height + topLine.height
+            topMargin: 45
         }
     }
 
-    Rectangle {
-        id: topLine
-        color: "black"
-        height: 2
+    Rectangle  {
         anchors {
             top: parent.top
             left: parent.left
             right: parent.right
         }
-    }
+        height: 45
+        color: "white"
 
-    Text {
-        id: titleText
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
+        Rectangle {
+            id: topLine
+            color: "black"
+            height: 2
+            anchors {
+                top: parent.top
+                left: parent.left
+                right: parent.right
+            }
         }
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
 
-        height: 40
-    }
+        Rectangle {
+            id: bottomLine
+            color: "lightgray"
+            height: 1
+            anchors {
+                bottom: parent.bottom
+                left: parent.left
+                right: parent.right
+            }
+        }
 
-    ToolButton {
-        id: closeButton
-        icon {
-            source: "qrc:/icon/down.svg"
-            height: 20
-            width: 20
+        Text {
+            id: titleText
+            anchors {
+                top: topLine.bottom
+                left: parent.left
+                right: parent.right
+                bottom: bottomLine.top
+            }
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
         }
-        height: titleText.height
-        width: titleText.height
-        anchors {
-            top: parent.top
-            right: parent.right
-        }
-        onClicked: {
-            dialog.reject()
+
+        ToolButton {
+            id: closeButton
+            icon {
+                source: "qrc:/icon/down.svg"
+                height: 20
+                width: 20
+            }
+            height: titleText.height
+            width: titleText.height
+            anchors {
+                right: parent.right
+            }
+            onClicked: {
+                dialog.reject()
+            }
         }
     }
 
