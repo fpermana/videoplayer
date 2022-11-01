@@ -2,6 +2,7 @@
 ----
 
 videoplayer is simple Video player with basic feature to load and play video. It is a C++ and Qt Framework app.
+
 ----
 ## Cloning
     $ git clone https://github.com/fpermana/videoplayer.git
