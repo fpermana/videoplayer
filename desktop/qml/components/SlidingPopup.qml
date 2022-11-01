@@ -1,10 +1,11 @@
 import QtQuick 2.4
 //import QtQuick.Window 2.0
-import QtQuick.Controls 2.15
+//import QtQuick.Controls 2.15
 
 FocusScope {
     id: dialog
     property alias title: titleText.text
+    property bool destroyOnClosing: false
 
     default property alias children: content.data
 
@@ -34,6 +35,10 @@ FocusScope {
 
     function close() {
         dialog.state = "";
+
+        if (destroyOnClosing) {
+            dialog.destroy(5000);
+        }
     }
 
     Rectangle {
@@ -88,13 +93,9 @@ FocusScope {
             verticalAlignment: Text.AlignVCenter
         }
 
-        ToolButton {
+        IconButton {
             id: closeButton
-            icon {
-                source: "qrc:/icon/down.svg"
-                height: 20
-                width: 20
-            }
+            iconSource: "qrc:/icon/down.svg"
             height: titleText.height
             width: titleText.height
             anchors {

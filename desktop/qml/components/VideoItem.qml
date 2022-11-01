@@ -50,13 +50,14 @@
 
 import QtQuick 2.0
 import QtMultimedia 5.0
-import QtQuick.Controls 2.15
+//import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+//import id.fpermana.videoplayer 1.0
 
 Item {
     id: root
-    height: appStackView.height
-    width: appStackView.width
+    height: parent.height
+    width: parent.width
 
     property alias duration: mediaPlayer.duration
     property alias mediaSource: mediaPlayer.source
@@ -104,8 +105,9 @@ Item {
         height: 80
         RowLayout {
              anchors.fill: parent
-             ToolButton {
-                 icon.source: mediaPlayer.playbackState === MediaPlayer.PlayingState ? "qrc:/icon/pause.svg" : "qrc:/icon/play.svg"
+             IconButton {
+//                 icon.source: mediaPlayer.playbackState === MediaPlayer.PlayingState ? "qrc:/icon/pause.svg" : "qrc:/icon/play.svg"
+                 iconSource: mediaPlayer.playbackState === MediaPlayer.PlayingState ? "qrc:/icon/pause.svg" : "qrc:/icon/play.svg"
                  onClicked: {
                      if(mediaPlayer.playbackState === MediaPlayer.PlayingState) {
                          mediaPlayer.pause()
@@ -115,8 +117,9 @@ Item {
                      }
                  }
              }
-             ToolButton {
-                 icon.source: "qrc:/icon/stop.svg"
+             IconButton {
+//                 icon.source: "qrc:/icon/stop.svg"
+                 iconSource: "qrc:/icon/stop.svg"
                  onClicked: {
                      mediaPlayer.stop()
                  }
@@ -127,15 +130,21 @@ Item {
                  onSeekPositionChanged: root.seek(seekPosition)
                  Layout.fillWidth: true
              }
-             ToolButton {
-                 icon.source: "qrc:/icon/dot-menu.svg"
+             IconButton {
+//                 icon.source: "qrc:/icon/dot-menu.svg"
+                 iconSource: "qrc:/icon/dot-menu.svg"
                  onClicked: {
-                     console.log('open')
+//                     console.log('open')
                      openFileSlidingPopup.open()
+
                  }
              }
          }
     }
+
+//    FilePicker {
+//        id: localFilePicker
+//    }
 
     function start() { mediaPlayer.play() }
     function stop() { mediaPlayer.stop() }

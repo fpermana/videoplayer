@@ -11,5 +11,7 @@
         <file>icon/file.svg</file>
         <file>icon/down.svg</file>
         <file>icon/up.svg</file>
+        <file>icon/maximize.svg</file>
+        <file>icon/minimize.svg</file>
     </qresource>
 </RCC>

@@ -9,3 +9,5 @@
 * file.svg https://icon-icons.com/icon/file-play/184989
 * down.svg https://icon-icons.com/icon/angle-arrow-down/73683
 * up.svg https://icon-icons.com/icon/arrow-up/72374
+* maximize.svg https://icon-icons.com/icon/window-maximize/137012
+* minimize.svg https://icon-icons.com/icon/window-minimize/194428

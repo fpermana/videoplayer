@@ -46,6 +46,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    qml/components/IconButton.qml \
     qml/components/OpenFileSlidingPopup.qml \
     qml/components/OpenFileWindowPopup.qml \
     qml/components/SeekControl.qml \

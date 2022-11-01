@@ -10,5 +10,6 @@
         <file>qml/components/OpenFileWindowPopup.qml</file>
         <file>qml/components/OpenFileSlidingPopup.qml</file>
         <file>qml/pages/AboutPage.qml</file>
+        <file>qml/components/IconButton.qml</file>
     </qresource>
 </RCC>
